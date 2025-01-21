@@ -10,9 +10,6 @@ COPY . /var/www/html/
 # Definir permissões adequadas para o diretório
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
-# Reiniciar o serviço do Apache
-RUN service apache2 restart
-
 # Expor a porta 80
 EXPOSE 80
 
