@@ -10,13 +10,6 @@ COPY . /var/www/html/
 # Definir permissões adequadas para o diretório
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
-# Configurar o VirtualHost para permitir o uso de .htaccess
-RUN echo "<Directory /var/www/html>
-    AllowOverride All
-    Require all granted
-</Directory>" > /etc/apache2/conf-available/allow-override.conf \
-    && a2enconf allow-override
-
 # Reiniciar o serviço do Apache
 RUN service apache2 restart
 
