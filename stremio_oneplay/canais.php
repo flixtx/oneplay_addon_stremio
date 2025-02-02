@@ -12,14 +12,15 @@ $canais = [
         'genres' => ['Canais Abertos'],
         'streams' => [
             [
-                "url" => "https://play.embehub.com/GloboSP/index.fmp4.m3u8",
+                "url" => "https://anonstream.zip/globosp-globosaopaulo/index.m3u8",
                 "title" => "Globo SP",
                 "behaviorHints" => [
                     "notWebReady" => true,
                     "proxyHeaders" => [
                         "request" => [
                             "User-Agent" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
-                            "Referer" => "https://play.embehub.com/GloboSP/embed.html"
+                            "Origin" => "https://embedstream.org",
+                            "Referer" => "https://embedstream.org/"
                         ]
                     ]
                 ]
