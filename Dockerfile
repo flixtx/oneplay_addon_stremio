@@ -11,7 +11,7 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
 # Expor a porta 80
-EXPOSE 8888
+EXPOSE 80
 
 # Comando padrão para iniciar o Apache
 CMD ["apache2-foreground"]
