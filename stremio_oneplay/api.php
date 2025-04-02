@@ -2,8 +2,8 @@
 
 function tvshows($imdb, $season, $episode) {
     $stream = '';
-    //$base = 'https://superflixapi.dev';
-    $base = 'https://superflixapi.cc';
+    //$base = 'https://superflixapi.cx';
+    $base = 'https://superflixapi.cx';
     $headers = [
         'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.1 Safari/537.36'
     ];
@@ -114,8 +114,8 @@ function tvshows($imdb, $season, $episode) {
 
 function movie($imdb) {
     $stream = '';
-    // $base = 'https://superflixapi.dev';
-    $base = 'https://superflixapi.cc';
+    // $base = 'https://superflixapi.cx';
+    $base = 'https://superflixapi.cx/';
     $headers = [
         'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.1 Safari/537.36'
     ];
